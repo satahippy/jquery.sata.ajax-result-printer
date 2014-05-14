@@ -46,3 +46,7 @@ $('#result').sataAjaxResultPrinter({
 ```
 
 It will load result of `http://you-url.com` to `#result`. In options you can specify any [ajax settings](http://api.jquery.com/jquery.ajax/).
+
+## Where it can be useful?
+
+In learning projects!
