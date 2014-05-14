@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sata Ajax Result Printer</title>
+
+		<script type="text/javascript" src="../bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="../bower_components/underscore/underscore.js"></script>
+
+		<script type="text/javascript" src="../src/jquery.sata.ajax-result-printer.js"></script>
+
+		<script type="text/javascript">
+			$(function () {
+				$('#url').change(function () {
+					$('#result').sataAjaxResultPrinter({
+						url: $(this).val()
+					});
+				});
+
+				$('#load-json').click(function(){
+					$('#url').val('test.json');
+					$('#url').change();
+				});
+				$('#load-html').click(function(){
+					$('#url').val('test.html');
+					$('#url').change();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<p>
+			Type here url that returns page or json.
+		</p>
+		<button id="load-json">json</button><button id="load-html">html</button>
+		<input id="url" type="text" />
+		<pre id="result"></pre>
+	</body>
+</html>

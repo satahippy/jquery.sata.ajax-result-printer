@@ -1,0 +1,13 @@
+{
+	"name": "jquery.sata.ajax-result-printer",
+	"version": "0.1.0",
+	"authors": [
+		"satahippy <satahippy@gmail.com>"
+	],
+	"license": "MIT",
+	"main": "src/jquery.sata.ajax-result-printer.js",
+	"dependencies": {
+		"jquery": "^1.9",
+		"underscore": "^1.6"
+	}
+}
